@@ -1,12 +1,12 @@
-// import './App.css';
-import Header from './components/Header/index'
-import Footer from "./components/Footer/index"
+import "./App.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
       codeshows
-      {/* <Header/> */}
-      {/* <Footer/> */}
+      <Header />
+      <Footer/>
     </div>
   );
 }
