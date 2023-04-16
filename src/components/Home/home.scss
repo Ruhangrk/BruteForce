@@ -1,4 +1,45 @@
-.home-container{
-    margin-top:55px;
-    background: yellowgreen;
+.home {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .home-container {
+    margin-top: 55px;
+    background: rgb(57, 57, 57);
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    column-gap: 1fr;
+    align-items: center;
+    .logo-description {
+      min-height: fit-content;
+      margin-top: 1rem;
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in;
+      }
+      .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(192, 192, 192);
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(159, 159, 159);
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+  }
 }
