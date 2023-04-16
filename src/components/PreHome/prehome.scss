@@ -48,6 +48,19 @@
         font-weight: lighter;
         text-align: center;
       }
+      .MyLSButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        height: auto;
+        padding: 4px;
+        gap: 3rem;
+        // .MySignupButton{
+
+        // }
+      }
     }
   }
 }

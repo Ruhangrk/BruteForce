@@ -1,11 +1,7 @@
-body {
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.container {
+.FooterContainer {
   position: absolute;
-  top:90vh;
+  margin-top: auto;
+  // bottom:0p;
   width: 100vw;
   height: 80px;
   background-color: #202124;
@@ -16,7 +12,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   flex-wrap: nowrap;
-  .content {
+  .FooterContent {
     min-width: 350px;
     width: 80vw;
     margin: 0 auto;
@@ -27,12 +23,12 @@ body {
     flex-wrap: nowrap;
     gap: 3rem;
   }
-  #icon{
+  #FooterIcon{
     color: whitesmoke;
     font-size: 1.6rem;
   }
 
-  #icon:hover{
+  #FooterIcon:hover{
     font-size: 2rem;
     display: inline-block;
     border: 1px initial rgb(86, 180, 239);
@@ -42,8 +38,9 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .container{
-    .content{
+  .FooterContainer{
+    width: 100vw;
+    .FooterContent{
       min-width: 350px;
       width: 40vw;
       gap: 0.5rem;

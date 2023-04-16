@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./Footer.scss";
 import { BsFacebook } from "react-icons/bs";
 import { SiTwitter, SiLinkedin } from "react-icons/si";
 import { RiTelegramLine } from "react-icons/ri";
@@ -7,26 +7,26 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="container">
-        <div className="content">
-          <div id="social">
+      <footer className="FooterContainer">
+        <div className="FooterContent">
+          <div id="FooterSocial">
             <Link to="https://www.facebook.com/codeshows/">
-              <BsFacebook id="icon" />
+              <BsFacebook id="FooterIcon" />
             </Link>
           </div>
-          <div id="social">
+          <div id="FooterSocial">
             <Link to="https://t.me/codeshows">
-              <SiTwitter id="icon" />
+              <SiTwitter id="FooterIcon" />
             </Link>
           </div>
-          <div id="social">
+          <div id="FooterSocial">
             <Link to="https://t.me/codeshows">
-              <RiTelegramLine id="icon" />
+              <RiTelegramLine id="FooterIcon" />
             </Link>
           </div>
-          <div id="social">
+          <div id="FooterSocial">
             <Link to="https://www.linkedin.com/company/codeshows/">
-              <SiLinkedin id="icon" />
+              <SiLinkedin id="FooterIcon" />
             </Link>
           </div>
         </div>

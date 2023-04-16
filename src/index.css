@@ -1,6 +1,7 @@
 * {
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   width: 0.2rem;
 }
@@ -18,7 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   width: 100vw;
-  background: rgb(57, 57, 57);
+  background: #2f2e2e;
+  height: auto;
 }
 
 code {
