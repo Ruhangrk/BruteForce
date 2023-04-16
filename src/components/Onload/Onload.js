@@ -1,25 +1,29 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react"
 import "./onload.scss";
+
 const Onload = () => {
-    var message = document.getElementById("name");
-    function writeMessage(string) {
-        var i = 0, intervalId;
-        intervalId = window.setInterval(function () {
-            message.innerHTML += string.charAt(i++);
-            if (i > string.length)
-                window.clearInterval(intervalId);
-        }, 100);
-    }
+
+
+    const [text, setText] = useState("")
+    const [fullText, setFullText] = useState("CODESHOWS")
+    const [index, setIndex] = useState(0)
     useEffect(() => {
-        writeMessage("CODESHOWS");
-    }, [writeMessage]);
-    // window.onload
+        if (index < fullText.length) {
+            setTimeout(() => {
+                setText(text + fullText[index])
+                setIndex(index + 1)
+            }, 500)
+        }
+    }, [index])
+
+
     return (
         <>
-            <div id="name">
-            </div>
+
             <div className="center-body">
+                <div id="name">
+                    <span>{text}</span>
+                </div>
                 <div className="loader-circle-11">
                     <div className="arc"></div>
                     <div className="arc"></div>

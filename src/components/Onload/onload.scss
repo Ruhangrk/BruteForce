@@ -2,10 +2,12 @@
 
 .center-body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100vh;
+	gap: 3rem;
 	/****** center box
 	width: 300px;
 	height: 300px;
@@ -15,8 +17,9 @@
 body {
 	background-color: #202628;
 }
-.name{
+#name{
     color: whitesmoke;
+
 }
 .loader-circle-11 {
 	position: relative;
