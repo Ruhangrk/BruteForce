@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Onload from "./components/Onload/Onload";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Events from "./components/Events/Events";
@@ -14,6 +15,7 @@ function App() {
         <Route path="/events" exact element={<Events />} />
         <Route path="/blog" exact element={<Blog />} />
       </Routes>
+      <Onload />
       <Footer />
     </div>
   );
