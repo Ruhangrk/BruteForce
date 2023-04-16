@@ -1,7 +1,8 @@
 import React from "react";
-// import "sass";
 import "./index.scss";
 import { BsFacebook } from "react-icons/bs";
+import { SiTwitter, SiLinkedin } from "react-icons/si";
+import { RiTelegramLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -10,25 +11,22 @@ const Footer = () => {
         <div className="content">
           <div id="social">
             <Link to="https://www.facebook.com/codeshows/">
-              <BsFacebook />
+              <BsFacebook id="icon" />
             </Link>
           </div>
           <div id="social">
             <Link to="https://t.me/codeshows">
-              {/* <i className="fa fa-twitter"></i> */}
+              <SiTwitter id="icon" />
             </Link>
           </div>
           <div id="social">
-            <Link to="https://t.me/codeshows"></Link>
+            <Link to="https://t.me/codeshows">
+              <RiTelegramLine id="icon" />
+            </Link>
           </div>
           <div id="social">
             <Link to="https://www.linkedin.com/company/codeshows/">
-              <i className="fa fa-linkedin"></i>
-            </Link>
-          </div>
-          <div id="social">
-            <Link to="https://codeshows.github.io/">
-              <i className="fa fa-dribbble"></i>
+              <SiLinkedin id="icon" />
             </Link>
           </div>
         </div>

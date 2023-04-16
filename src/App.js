@@ -1,12 +1,20 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Events from "./components/Events/Events";
+import Blog from "./components/Blog/Blog";
 function App() {
   return (
     <div className="App">
-      codeshows
       <Header />
-      <Footer/>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/events" exact element={<Events />} />
+        <Route path="/blog" exact element={<Blog />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

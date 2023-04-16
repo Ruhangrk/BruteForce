@@ -1,28 +1,29 @@
 import React from "react";
-// import "sass";
+import "./header.scss";
 import { Link } from "react-router-dom";
 
-// import "./header.scss";
 const Header = () => {
   return (
-    <>
-      <header>
-        <ul>
-          <li>
-            <Link to="">Home</Link>
-          </li>
-          <li>
-            <Link to="">Events</Link>
-          </li>
-          <li>
-            <Link to="">Blog</Link>
-          </li>
-          <li>
-            <Link to="">Profile</Link>
-          </li>
-        </ul>
+    <div className="header-container">
+      <header className="header">
+        <div className="logo">CodeShows</div>
+        <div className="last" />
+        <div className="actions">
+          <Link to="/">
+            <button>Home</button>
+          </Link>
+          <Link to="/events">
+            <button>Events</button>
+          </Link>
+          <Link to="/blog">
+            <button>Blog</button>
+          </Link>
+          <Link to="/profile">
+            <button>Profile</button>
+          </Link>
+        </div>
       </header>
-    </>
+    </div>
   );
 };
 
