@@ -1,6 +1,42 @@
-.FormContainer{
-    width: 100%;
+.MainFormContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../utils/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     min-width: 350px;
-    min-height: 80vh;
-    
+    .FormContainer{
+        width: 50%;
+        min-width: 300px;
+        overflow-x: hidden;
+        height: 500px;
+        background-color: #000;
+        opacity: .8;
+        color: whitesmoke;
+        box-shadow: inset light 0px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .MyLoginForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: center;
+        padding: 5px;
+        align-content: flex-start;
+        .MyFormButtons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
 }
+
+    

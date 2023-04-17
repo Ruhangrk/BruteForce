@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
+import NoHeader from "./components/Header/NoHeader";
 import Footer from "./components/Footer/Footer";
 import Onload from "./components/Onload/Onload";
 import { Routes, Route } from "react-router-dom";
@@ -26,14 +27,14 @@ function App() {
         loading ? <Onload />
           :
           <>
-            <Header />
+
             <Routes>
-              <Route path="/" exact element={<PreHome />} />
-              <Route path="/login" exact element={<Login />} />
-              <Route path="/signup" exact element={<Signup />} />
-              <Route path="/home" exact element={<Home />} />
-              <Route path="/events" exact element={<Events />} />
-              <Route path="/blog" exact element={<Blog />} />
+              <Route path="/" exact element={<><NoHeader /><PreHome /></>} />
+              <Route path="/login" exact element={<><NoHeader /><Login /></>} />
+              <Route path="/signup" exact element={<><NoHeader /><Signup /></>} />
+              <Route path="/home" exact element={<><Header /><Home /></>} />
+              <Route path="/events" exact element={<><Header /><Events /></>} />
+              <Route path="/blog" exact element={<><Header /><Blog /></>} />
             </Routes>
             <Footer />
           </>
