@@ -1,0 +1,97 @@
+.card-text {
+  text-align: left;
+  color: red;
+}
+
+.card {
+  width: 80%;
+  margin-top: 2em;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img-top {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-size: 160px 160px;
+  overflow: hidden;
+  background-image:url("../utils/profile.jpg");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.user-profile {
+  min-width: 350px;
+  height: 100vh;
+}
+
+.buttons {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  margin-bottom: 30px;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+.storage-pokes,
+.wishlist-pokes {
+  height: 80vh;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.header-poke {
+  top: 0;
+}
+
+.footer-poke {
+  bottom: 0;
+}
+
+input[type="file"] {
+  border-radius: 5px;
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+.changeimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+span {
+  text-align: center;
+}
+
+.imglabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}

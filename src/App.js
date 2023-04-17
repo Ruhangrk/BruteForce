@@ -11,7 +11,7 @@ import Blog from "./components/Blog/Blog";
 import Login from "./components/manage/Login";
 import Signup from "./components/manage/Signup";
 import { useState, useEffect } from "react";
-
+import MyProfile from "./components/profile/MyProfile"
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -85,6 +85,16 @@ function App() {
             <>
               <Header />
               <Blog />
+            </>
+          }
+        />
+        <Route
+          path="/profile"
+          exact
+          element={
+            <>
+              <Header />
+              <MyProfile />
             </>
           }
         />
