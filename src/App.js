@@ -12,33 +12,85 @@ import Login from "./components/manage/Login";
 import Signup from "./components/manage/Signup";
 import { useState, useEffect } from "react";
 
-
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 6000);
   }, []);
   return (
     <div className="App">
-      {
-        loading ? <Onload />
-          :
-          <>
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={
+            loading ? (
+              <Onload />
+            ) : (
+              <>
+                <NoHeader />
+                <PreHome />
+              </>
+            )
+          }
+        ></Route>
 
-            <Routes>
-              <Route path="/" exact element={<><NoHeader /><PreHome /></>} />
-              <Route path="/login" exact element={<><NoHeader /><Login /></>} />
-              <Route path="/signup" exact element={<><NoHeader /><Signup /></>} />
-              <Route path="/home" exact element={<><Header /><Home /></>} />
-              <Route path="/events" exact element={<><Header /><Events /></>} />
-              <Route path="/blog" exact element={<><Header /><Blog /></>} />
-            </Routes>
-            <Footer />
-          </>
-      }
+        <Route
+          path="/login"
+          exact
+          element={
+            <>
+              <NoHeader />
+              <Login />
+            </>
+          }
+        />
+        <Route
+          path="/signup"
+          exact
+          element={
+            <>
+              <NoHeader />
+              <Signup />
+            </>
+          }
+        />
+        <Route
+          path="/home"
+          exact
+          element={
+            <>
+              <Header />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/events"
+          exact
+          element={
+            <>
+              <Header />
+              <Events />
+            </>
+          }
+        />
+        <Route
+          path="/blog"
+          exact
+          element={
+            <>
+              <Header />
+              <Blog />
+            </>
+          }
+        />
+      </Routes>
+
+      <Footer />
     </div>
   );
 }

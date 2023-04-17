@@ -10,7 +10,7 @@ const Onload = () => {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
-      }, 500);
+      }, 300);
     }
   }, [index]);
 

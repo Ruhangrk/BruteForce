@@ -1,0 +1,53 @@
+.MainPastContainer {
+  //   height: calc(100vh - 70px);
+  height: 100%;
+  width: 100%;
+  background: #2f2e2e;
+  padding-top: 20px;
+  //   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   position: relative;
+}
+.PastContainer {
+  //   width: 90%;
+  height: 100%;
+  .MainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    // flex-direction: row?
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+// @media only screen and (max-width: 1200px) {
+//   .upcoming-container {
+//     .main-container {
+//       grid-template-columns: 5fr 5fr;
+//     }
+//   }
+// }
+// @media only screen and (max-width: 800px) {
+//   .upcoming-container {
+//     display: flex;
+//     .main-container {
+//       display: flex;
+//       flex-direction: column;
+//       flex: 0 0 100%;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+// }
+#controlled-tab-example-tabpane-home {
+  height: 100%;
+  margin: 0;
+}

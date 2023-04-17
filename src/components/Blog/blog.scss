@@ -1,5 +1,42 @@
-.blog-container{
-    position: relative;
-    margin-top: 55px;
-    background: rgb(143, 214, 112);
+.blog-container {
+  height: 100vh;
+  display: flex;
+  margin-top: 55px;
+  padding: 1rem 0.5rem;
+  justify-content: center;
+  .main-container {
+    height:fit-content;
+    display: grid;
+    // grid-template-rows: 1fr 40fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    column-gap: 1fr;
+    // grid-gap: .5fr;
+    margin-bottom:100px;
+    #card:nth-child(odd){
+      background: rgb(167, 166, 166);
+    }
+     #card:nth-child(even){
+      background: whitesmoke;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .blog-container {
+    .main-container {
+      font-size: 15px;
+      grid-template-columns: 5fr 5fr;
+      column-gap: 0.1fr;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .blog-container {
+    height: 100vh;
+    grid-template-columns: 1fr 5fr 1fr;
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
 }

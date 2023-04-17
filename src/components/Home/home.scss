@@ -21,12 +21,12 @@
         justify-content: center;
         align-items: center;
         height: 150px;
-        width: 150px;
-        background-size: 150px 150px;
+        width: auto;
+        background-size: auto auto;
       }
       .HomeLogo {
-        height: 150px;
-        width: 150px;
+        width: fit-content;
+        height: auto;
       }
       .HomeDescription {
         display: flex;

@@ -1,22 +1,28 @@
 import React from "react";
 import "./header.scss";
 import logo from "../utils/logo.png";
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Header() {
   return (
     <>
       {["xl"].map((expand) => (
-        <Navbar key={expand} sticky="top" bg="light" expand={expand} className="mb-3">
+        <Navbar
+          key={expand}
+          sticky="top"
+          bg="light"
+          expand={expand}
+          // className="mb-3"
+        >
           <Container fluid>
-            <div className="MyLogo" >
+            <div className="MyLogo">
               <img className="HeaderLogo" src={logo} />
-              <Navbar.Brand href="#" >CodeShows</Navbar.Brand>
+              <Navbar.Brand href="/">CodeShows</Navbar.Brand>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -36,15 +42,15 @@ function Header() {
                   <Nav.Link href="/blog">Blogs</Nav.Link>
                   <Nav.Link href="/profile">Profile</Nav.Link>
                 </Nav>
-                <Form className="d-flex">
+                {/* <Form className="d-flex">
                   <Form.Control
                     type="search"
                     placeholder="Search"
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
+                  <Button variant="outline-success">Search</Button> */}
+                {/* </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
