@@ -1,28 +1,37 @@
 .blog-container {
   height: 100vh;
+  overflow-y: scroll;
   display: flex;
   margin-top: 55px;
   padding: 1rem 0.5rem;
+  min-width: 350px;
   justify-content: center;
   .main-container {
-    height:fit-content;
+    min-width: 350px;
+    height: fit-content;
     display: grid;
-    // grid-template-rows: 1fr 40fr 1fr;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     column-gap: 1fr;
     // grid-gap: .5fr;
-    margin-bottom:100px;
-    #card:nth-child(odd){
+    margin-bottom: 100px;
+    #card:nth-child(odd) {
       background: rgb(167, 166, 166);
     }
-     #card:nth-child(even){
+    #card:nth-child(even) {
       background: whitesmoke;
     }
   }
 }
 @media only screen and (max-width: 1200px) {
   .blog-container {
+    height: 100vh;
+    min-width: 350px;
+
+    overflow-y: scroll;
     .main-container {
+      height: fit-content;
+      min-width: 350px;
+
       font-size: 15px;
       grid-template-columns: 5fr 5fr;
       column-gap: 0.1fr;
@@ -32,8 +41,13 @@
 @media only screen and (max-width: 800px) {
   .blog-container {
     height: 100vh;
+    min-width: 350px;
+    overflow-y: scroll;
     grid-template-columns: 1fr 5fr 1fr;
     .main-container {
+      height: fit-content;
+      min-width: 350px;
+
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;

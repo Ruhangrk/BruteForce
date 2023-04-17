@@ -10,7 +10,7 @@ const CardComponent = (props) => {
           <Card.Subtitle className="mb-2 text-muted">
             {props.subTitle}
           </Card.Subtitle>
-          <Card.Text>{props.description}</Card.Text>
+          <Card.Text style={{"text-align": "center"}}>{props.description}</Card.Text>
           <Card.Link href={props.link}>Card Link</Card.Link>
         </Card.Body>
       </Card>

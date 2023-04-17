@@ -15,18 +15,19 @@
       align-items: center;
       gap: 3rem;
       width: 100%;
-      padding: 4px;
-      .MyhomeLogo {
+      // padding: 4px;
+      .MyHomeLogo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 400px;
         width: auto;
-        background-size: auto auto;
-      }
-      .HomeLogo {
-        width: fit-content;
-        height: auto;
+        background-size: 500px auto;
+        .HomeLogo {
+          // width: fit-content;
+          height: 400px;
+          width: auto;
+        }
       }
       .HomeDescription {
         display: flex;
@@ -52,7 +53,7 @@
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) {
   .Myhome {
     width: 100vw;
     .MyHomeContainer {
@@ -60,42 +61,44 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      min-width: 350px;
       .MyLogoDescription {
-        width: 70%;
-        .MyhomeLogo {
-          height: 350px;
-          width: 350px;
-          background-size: 350px 350px;
-        }
-        .HomeLogo {
-          height: 350px;
-          width: 350px;
+        width: 80%;
+        .MyHomeLogo {
+          height: 220px;
+          width: auto;
+          background-size: 220px auto;
+          .HomeLogo {
+            height: 220px;
+            width: auto;
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (max-width: 350px) {
   .Myhome {
+    position: relative;
+    min-width: 350px;
     width: 100vw;
     .MyHomeContainer {
+      width: 350px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       min-width: 350px;
       .MyLogoDescription {
-        width: 80%;
-        .MyhomeLogo {
-          height: 280px;
-          width: 280px;
-          background-size: 280px 280px;
-        }
-        .HomeLogo {
-          height: 280px;
-          width: 280px;
+        width: 100%;
+        .MyHomeLogo {
+          height: 150px;
+          width: auto;
+          background-size: 150px auto;
+          .HomeLogo {
+            height: 150px;
+            width: auto;
+          }
         }
       }
     }

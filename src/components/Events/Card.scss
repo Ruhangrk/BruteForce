@@ -1,4 +1,5 @@
 .CardContainer {
+  line-height:2rem;
   width: 300px;
   min-height: auto;
   display: flex;
@@ -6,7 +7,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
+  // max-width: 350px;
   background: whitesmoke;
   border-radius: 7px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
@@ -59,7 +60,8 @@
 }
 @media only screen and (max-width: 800px) {
   .CardContainer {
-    min-width: 250px;
+    // min-width: 250px;
+    margin: 0;
     .CardSection{
         letter-spacing: 0;
     }
